@@ -1,0 +1,4 @@
+directory: /cvgl2/u/jdwong/PAIR/rlkit/rlkit/..
+git hash: d63dab7008cf4d5b6018db8da97b714718bf8a8a
+git branch name: master
+
