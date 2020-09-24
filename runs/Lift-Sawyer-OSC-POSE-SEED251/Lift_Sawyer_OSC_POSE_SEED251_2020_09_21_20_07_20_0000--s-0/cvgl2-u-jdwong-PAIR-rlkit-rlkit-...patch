@@ -1,0 +1,31 @@
+diff --git a/rlkit/core/eval_util.py b/rlkit/core/eval_util.py
+index d232b38..b7f3927 100644
+--- a/rlkit/core/eval_util.py
++++ b/rlkit/core/eval_util.py
+@@ -103,7 +103,8 @@ def create_stats_ordered_dict(
+     if (isinstance(data, np.ndarray) and data.size == 1
+             and not always_show_all_stats):
+         return OrderedDict({name: float(data)})
+-
++    #print(name)
++    #print("data = {}\n".format(data))
+     stats = OrderedDict([
+         (name + ' Mean', np.mean(data)),
+         (name + ' Std', np.std(data)),
+diff --git a/rlkit/core/rl_algorithm.py b/rlkit/core/rl_algorithm.py
+index 284ef46..7947875 100644
+--- a/rlkit/core/rl_algorithm.py
++++ b/rlkit/core/rl_algorithm.py
+@@ -70,8 +70,12 @@ class BaseRLAlgorithm(object, metaclass=abc.ABCMeta):
+         for k, v in self.trainer.get_snapshot().items():
+             snapshot['trainer/' + k] = v
+         for k, v in self.expl_data_collector.get_snapshot().items():
++            if k == 'env':
++                continue
+             snapshot['exploration/' + k] = v
+         for k, v in self.eval_data_collector.get_snapshot().items():
++            if k == 'env':
++                continue
+             snapshot['evaluation/' + k] = v
+         for k, v in self.replay_buffer.get_snapshot().items():
+             snapshot['replay_buffer/' + k] = v
