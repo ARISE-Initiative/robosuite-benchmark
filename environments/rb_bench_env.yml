@@ -1,0 +1,37 @@
+# Setup environments for using with rlkit
+name: rb_bench
+channels:
+- kne  # for pybox2d
+- pytorch
+- anaconda  # for mkl
+dependencies:
+- pip
+- cython
+- ipython  # technically unnecessary
+- joblib
+- lockfile
+- mako
+- matplotlib
+- mkl
+- numba
+- numpy
+- path.py
+- python=3.7.4
+- python-dateutil
+- pytorch
+- scipy
+- patchelf
+- pip:
+  - robosuite>=1.0.0
+  - box2d-py
+  - mujoco-py
+  - cloudpickle
+  - gym[all]
+  - gitpython
+  - gtimer
+  - pygame
+  - ipdb  # technically unnecessary
+  - jupyter
+  - h5py
+  - imageio
+  - imageio-ffmpeg
