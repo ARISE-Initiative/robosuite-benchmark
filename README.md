@@ -1,4 +1,4 @@
-# Robosuite V1.0 Benchmarking
+# Robosuite v1.0 Benchmarking
 Welcome to the robosuite v1.0 benchmarking repository. This repo is intended for ease of replication of our benchmarking results, as well as providing a skeleton for further experiments or benchmarking using our identical training environment.
 
 ## Getting Started
@@ -60,7 +60,7 @@ $ (rb_bench) python <PATH_TO_VISKIT_DIR>/viskit/frontend.py <PATH_TO_LOG_DIR>
 ```
 
 ## Visualizing Rollouts
-We provide a [rollout](scripts/rollout.py) for executing and visualizing rollouts using a trained agent model. The relevant command-line arguments that can be specified for this script are the `rollout` args in the `util/arguments.py` module. Of note:
+We provide a [rollout](scripts/rollout.py) script for executing and visualizing rollouts using a trained agent model. The relevant command-line arguments that can be specified for this script are the `rollout` args in the `util/arguments.py` module. Of note:
 
 * `load_dir` specifies the path to the logging directory that contains both the `variant.json` and `params.pkl` specifying the training configuration and agent model, respectively,
 
