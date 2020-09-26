@@ -2,7 +2,7 @@
 Welcome to the robosuite v1.0 benchmarking repository. This repo is intended for ease of replication of our benchmarking results, as well as providing a skeleton for further experiments or benchmarking using our identical training environment.
 
 ## Getting Started
-Our benchmarks consist of training [Soft Actor-Critic](https://arxiv.org/abs/1812.05905) agents implemented from [rlkit](https://github.com/vitchyr/rlkit). We build on top of rlkit's standard functionality to provide extra features useful for our purposes, such as video recording of rollouts and additional asymmetrical exploration / evaluation horizons.
+Our benchmarks consist of training [Soft Actor-Critic](https://arxiv.org/abs/1812.05905) agents implemented from [rlkit](https://github.com/vitchyr/rlkit). We build on top of rlkit's standard functionality to provide extra features useful for our purposes, such as video recording of rollouts and asymmetrical exploration / evaluation horizons.
 
 To begin, start by cloning this repository from your terminal and moving into this directory:
 ```bash
