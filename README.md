@@ -41,7 +41,7 @@ For a given training run, a configuration must be specified -- this can be done 
 
 1. **Command line arguments.** It may be useful to specify your desired configuration on the fly, from the command line. However, as there are many potential arguments that can be provided for training, we have modularized and organized them within a separate [arguments](util/arguments.py) module that describes all potential arguments for a given script. Note that for this training script, the `robosuite`, `agent`, and `training_args` are relevant here. Note that there are default values already specified for most of these values.
 
-2. **Configuration files.** However, it is often more succinct and efficient to specify a configuration file (`.json`), and load this during runtime for training. If the `--variant` argument is specified, the configuration will be loaded and used for training. In this case, the resulting script execution line will look like so:
+2. **Configuration files.** It is often more succinct and efficient to specify a configuration file (`.json`), and load this during runtime for training. If the `--variant` argument is specified, the configuration will be loaded and used for training. In this case, the resulting script execution line will look like so:
 
 ```bash
 $ (rb_bench) python scripts/train.py --variant <PATH_TO_CONFIG>.json
