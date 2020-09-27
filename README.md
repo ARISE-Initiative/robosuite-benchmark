@@ -22,7 +22,7 @@ $ source activate rb_bench
 Next, we must install rlkit. Go the the [rlkit](https://github.com/vitchyr/rlkit) repository and clone and install it, in your preferred directory:
 ```bash
 $ (rb_bench) cd <PATH_TO_YOUR_RLKIT_LOCATION>
-$ (rb_bench) it clone https://github.com/vitchyr/rlkit.git
+$ (rb_bench) git clone https://github.com/vitchyr/rlkit.git
 $ (rb_bench) cd rlkit
 $ (rb_bench) pip install -e .
 ```
