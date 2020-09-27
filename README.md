@@ -1,8 +1,8 @@
-# Robosuite v1.0 Benchmarking
+# robosuite v1.0 Benchmarking
 Welcome to the robosuite v1.0 benchmarking repository. This repo is intended for ease of replication of our benchmarking results, as well as providing a skeleton for further experiments or benchmarking using our identical training environment.
 
 ## Getting Started
-Our benchmarks consist of training [Soft Actor-Critic](https://arxiv.org/abs/1812.05905) agents implemented from [rlkit](https://github.com/vitchyr/rlkit). We build on top of rlkit's standard functionality to provide extra features useful for our purposes, such as video recording of rollouts and asymmetrical exploration / evaluation horizons.
+Our benchmark consists of training [Soft Actor-Critic](https://arxiv.org/abs/1812.05905) agents implemented from [rlkit](https://github.com/vitchyr/rlkit). We built on top of rlkit's standard functionality to provide extra features useful for our purposes, such as video recording of rollouts and asymmetrical exploration / evaluation horizons.
 
 To begin, start by cloning this repository from your terminal and moving into this directory:
 ```bash
@@ -10,7 +10,7 @@ $ git clone https://github.com/ARISE-Initiative/robosuite-benchmark.git
 $ cd robosuite-benchmark
 ```
 
-Our benchmarking environment consists of a conda-based virtual Python environment running Python 3.7.4, and is supported for MacOSX and Linux. Other versions / machine configurations have not been tested. [Conda](https://docs.conda.io/en/latest/) is a useful tool for creating virtual environments for Python, and can be installed [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
+Our benchmarking environment consists of a Conda-based Python virtual environment running Python 3.7.4, and is supported for Mac OS X and Linux. Other versions / machine configurations have not been tested. [Conda](https://docs.conda.io/en/latest/) is a useful tool for creating virtual environments for Python, and can be installed [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
 
 After installing Conda, create a new virtual environment using our pre-configured environment setup, and activate this environment:
 
@@ -22,7 +22,7 @@ $ source activate rb_bench
 Next, we must install rlkit. Go the the [rlkit](https://github.com/vitchyr/rlkit) repository and clone and install it, in your preferred directory:
 ```bash
 $ (rb_bench) cd <PATH_TO_YOUR_RLKIT_LOCATION>
-$ (rb_bench) it clone https://github.com/vitchyr/rlkit.git
+$ (rb_bench) git clone https://github.com/vitchyr/rlkit.git
 $ (rb_bench) cd rlkit
 $ (rb_bench) pip install -e .
 ```
