@@ -15,7 +15,7 @@ Our benchmarking environment consists of a conda-based virtual Python environmen
 After installing Conda, create a new virtual environment using our pre-configured environment setup, and activate this environment:
 
 ```bash
-$ conda env create -f environments/rb_bench_env.yml
+$ conda env create -f environments/rb_bench_[linux/mac]_env.yml
 $ source activate rb_bench
 ```
 
