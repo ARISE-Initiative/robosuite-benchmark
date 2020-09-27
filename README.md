@@ -19,11 +19,12 @@ $ conda env create -f environments/rb_bench_[linux/mac]_env.yml
 $ source activate rb_bench
 ```
 
-Next, we must install rlkit. Go the the [rlkit](https://github.com/vitchyr/rlkit) repository and clone and install it, in your preferred directory:
+Next, we must install rlkit. Go the the [rlkit](https://github.com/vitchyr/rlkit) repository and clone and install it, in your preferred directory. Note that we currently require a specific rlkit version as the current release is incompatible with our repo:
 ```bash
 $ (rb_bench) cd <PATH_TO_YOUR_RLKIT_LOCATION>
 $ (rb_bench) git clone https://github.com/vitchyr/rlkit.git
 $ (rb_bench) cd rlkit
+$ (rb_bench) git reset --hard ae49265ef049c6b6d6be4fd3b2c76c5131c9b0ce
 $ (rb_bench) pip install -e .
 ```
 
