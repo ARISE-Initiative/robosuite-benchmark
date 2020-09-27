@@ -10,7 +10,7 @@ from rlkit.samplers.data_collector import MdpPathCollector
 from rlkit.torch.sac.policies import TanhGaussianPolicy, MakeDeterministic
 from rlkit.torch.sac.sac import SACTrainer
 from rlkit.torch.td3.td3 import TD3Trainer
-from rlkit.torch.networks import ConcatMlp, TanhMlpPolicy
+from rlkit.torch.networks import FlattenMlp, TanhMlpPolicy
 from rlkit.exploration_strategies.base import PolicyWrappedWithExplorationStrategy
 from rlkit.exploration_strategies.gaussian_strategy import GaussianStrategy
 from util.rlkit_custom import CustomTorchBatchRLAlgorithm
@@ -61,22 +61,22 @@ def experiment(variant, agent="SAC"):
     obs_dim = expl_env.observation_space.low.size
     action_dim = eval_env.action_space.low.size
 
-    qf1 = ConcatMlp(
+    qf1 = FlattenMlp(
         input_size=obs_dim + action_dim,
         output_size=1,
         **variant['qf_kwargs'],
     )
-    qf2 = ConcatMlp(
+    qf2 = FlattenMlp(
         input_size=obs_dim + action_dim,
         output_size=1,
         **variant['qf_kwargs'],
     )
-    target_qf1 = ConcatMlp(
+    target_qf1 = FlattenMlp(
         input_size=obs_dim + action_dim,
         output_size=1,
         **variant['qf_kwargs'],
     )
-    target_qf2 = ConcatMlp(
+    target_qf2 = FlattenMlp(
         input_size=obs_dim + action_dim,
         output_size=1,
         **variant['qf_kwargs'],

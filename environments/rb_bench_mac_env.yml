@@ -34,3 +34,4 @@ dependencies:
   - h5py
   - imageio
   - imageio-ffmpeg
+  - opencv-python

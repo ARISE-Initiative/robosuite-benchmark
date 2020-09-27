@@ -24,11 +24,18 @@ Next, we must install rlkit. Go the the [rlkit](https://github.com/vitchyr/rlkit
 $ (rb_bench) cd <PATH_TO_YOUR_RLKIT_LOCATION>
 $ (rb_bench) git clone https://github.com/vitchyr/rlkit.git
 $ (rb_bench) cd rlkit
-$ (rb_bench) git reset --hard ae49265ef049c6b6d6be4fd3b2c76c5131c9b0ce
+$ (rb_bench) git reset --hard f136e140a57078c4f0f665051df74dffb1351f33
 $ (rb_bench) pip install -e .
 ```
 
-Lastly, for visualizing active runs, we utilize rlkit's extraction of [rllab](https://github.com/rll/rllab)'s [viskit](https://github.com/vitchyr/viskit) package. Please see rlkit's README for specific installation instructions.
+Lastly, for visualizing active runs, we utilize rlkit's extraction of [rllab](https://github.com/rll/rllab)'s [viskit](https://github.com/vitchyr/viskit) package:
+```bash
+$ (rb_bench) cd <PATH_TO_YOUR_VISKIT_LOCATION>
+$ (rb_bench) git clone https://github.com/vitchyr/viskit.git
+$ (rb_bench) cd viskit
+$ (rb_bench) pip install -e .
+
+```
 
 ## Running an Experiment
 To validate our results on your own machine, or to experiment with another set of hyperparameters, we provide a [training script](scripts/train.py) as an easy entry point for executing individual experiments. Note that this repository must be added to your `PYTHONPATH` before running any scripts; this can be done like so:
