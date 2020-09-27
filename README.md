@@ -10,7 +10,7 @@ $ git clone https://github.com/ARISE-Initiative/robosuite-benchmark.git
 $ cd robosuite-benchmark
 ```
 
-Our benchmarking environment consists of a conda-based virtual Python environment running Python 3.7.4, and is supported for MacOSX and Linux. Other versions / machine configurations have not been tested. [Conda](https://docs.conda.io/en/latest/) is a useful tool for creating virtual environments for Python, and can be installed [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
+Our benchmarking environment consists of a Conda-based Python virtual environment running Python 3.7.4, and is supported for Mac OS X and Linux. Other versions / machine configurations have not been tested. [Conda](https://docs.conda.io/en/latest/) is a useful tool for creating virtual environments for Python, and can be installed [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
 
 After installing Conda, create a new virtual environment using our pre-configured environment setup, and activate this environment:
 
