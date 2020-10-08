@@ -1,5 +1,5 @@
 # Setup environments for using with rlkit
-name: rb_bench3
+name: rb_bench
 channels:
 - kne  # for pybox2d
 - pytorch
