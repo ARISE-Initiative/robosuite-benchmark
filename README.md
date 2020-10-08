@@ -12,11 +12,12 @@ $ cd robosuite-benchmark
 
 Our benchmarking environment consists of a Conda-based Python virtual environment running Python 3.7.4, and is supported for Mac OS X and Linux. Other versions / machine configurations have not been tested. [Conda](https://docs.conda.io/en/latest/) is a useful tool for creating virtual environments for Python, and can be installed [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
 
-After installing Conda, create a new virtual environment using our pre-configured environment setup, and activate this environment:
+After installing Conda, create a new virtual environment using our pre-configured environment setup, and activate this environment. Note that we have to unfortunately do a two-step installation process in order to avoid some issues with precise versions:
 
 ```bash
 $ conda env create -f environments/rb_bench_[linux/mac]_env.yml
 $ source activate rb_bench
+$ pip install -r requirements.txt
 ```
 
 Next, we must install rlkit. Go the the [rlkit](https://github.com/vitchyr/rlkit) repository and clone and install it, in your preferred directory. Note that we currently require a specific rlkit version as the current release is incompatible with our repo:

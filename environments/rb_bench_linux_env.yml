@@ -5,34 +5,18 @@ channels:
 - pytorch
 - anaconda  # for mkl
 dependencies:
-- pip
-- cython
-- ipython  # technically unnecessary
-- joblib
-- lockfile
-- mako
-- matplotlib
-- mkl
-- numba
-- numpy
-- path.py
+- pip=19.2.3
+- cython=0.29.13
+- ipython=7.8.0  # technically unnecessary
+- joblib=0.14.1
+- lockfile=0.12.2
+- mako=1.1.2
+- matplotlib=3.1.2
+- mkl=2019.4
+- numpy=1.17.2
+- path.py=12.4.0
 - python=3.7.4
-- python-dateutil
-- pytorch
-- scipy
+- python-dateutil=2.8.1
+- pytorch=1.4.0
+- scipy=1.4.1
 - patchelf
-- pip:
-  - robosuite>=1.0.0
-  - box2d-py
-  - mujoco-py
-  - cloudpickle
-  - gym[all]
-  - gitpython
-  - gtimer
-  - pygame
-  - ipdb  # technically unnecessary
-  - jupyter
-  - h5py
-  - imageio
-  - imageio-ffmpeg
-  - opencv-python
