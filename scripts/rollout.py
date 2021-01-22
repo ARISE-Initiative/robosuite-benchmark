@@ -89,11 +89,11 @@ if __name__ == "__main__":
     
     # Make sure we only pass in the proprio and object obs (no images)
     keys = ["object-state"]
-    for idx in range(len(self.env.robots)):
+    for idx in range(len(env_suite.robots)):
         keys.append(f"robot{idx}_proprio-state")
     
     # Wrap environment so it's compatible with Gym API
-    env = GymWrapper(env_suite)
+    env = GymWrapper(env_suite, keys=keys)
 
     # Run rollout
     simulate_policy(
