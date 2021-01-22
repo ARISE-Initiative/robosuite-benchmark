@@ -86,6 +86,13 @@ if __name__ == "__main__":
                            use_camera_obs=args.record_video,
                            reward_shaping=True
                            )
+    
+    # Make sure we only pass in the proprio and object obs (no images)
+    keys = ["object-state"]
+    for idx in range(len(self.env.robots)):
+        keys.append(f"robot{idx}_proprio-state")
+    
+    # Wrap environment so it's compatible with Gym API
     env = GymWrapper(env_suite)
 
     # Run rollout
