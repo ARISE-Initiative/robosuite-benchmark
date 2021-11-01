@@ -23,9 +23,9 @@ $ pip install -r requirements.txt
 Next, we must install rlkit. Go the the [rlkit](https://github.com/vitchyr/rlkit) repository and clone and install it, in your preferred directory. Note that we currently require a specific rlkit version as the current release is incompatible with our repo:
 ```bash
 $ (rb_bench) cd <PATH_TO_YOUR_RLKIT_LOCATION>
-$ (rb_bench) git clone https://github.com/vitchyr/rlkit.git
+$ (rb_bench) git clone https://github.com/rail-berkeley/rlkit.git
 $ (rb_bench) cd rlkit
-$ (rb_bench) git reset --hard f136e140a57078c4f0f665051df74dffb1351f33
+$ (rb_bench) git reset --hard b7f97b2463df1c5a1ecd2d293cfcc7a4971dd0ab
 $ (rb_bench) pip install -e .
 ```
 
