@@ -1,14 +1,13 @@
 import os
 import numpy as np
 
-import copy
 import json
 import torch
 import rlkit.torch.pytorch_util as ptu
 from rlkit.launchers.launcher_util import setup_logger
 
-from util.rlkit_utils import experiment
-from util.arguments import *
+from rb_bench.util.rlkit_utils import experiment
+from rb_bench.util.arguments import *
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
