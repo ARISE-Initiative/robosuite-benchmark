@@ -1,5 +1,5 @@
-from util.rlkit_utils import simulate_policy
-from util.arguments import add_rollout_args, parser
+from rb_bench.util.rlkit_utils import simulate_policy
+from rb_bench.util.arguments import add_rollout_args, parser
 import robosuite as suite
 from robosuite.wrappers import GymWrapper
 from robosuite.controllers import ALL_CONTROLLERS, load_controller_config

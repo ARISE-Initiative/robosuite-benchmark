@@ -1,4 +1,4 @@
-from util.rlkit_custom import rollout
+from rb_bench.util.rlkit_custom import rollout
 
 from rlkit.torch.pytorch_util import set_gpu_mode
 
@@ -13,7 +13,7 @@ from rlkit.torch.td3.td3 import TD3Trainer
 from rlkit.torch.networks import FlattenMlp, TanhMlpPolicy
 from rlkit.exploration_strategies.base import PolicyWrappedWithExplorationStrategy
 from rlkit.exploration_strategies.gaussian_strategy import GaussianStrategy
-from util.rlkit_custom import CustomTorchBatchRLAlgorithm
+from rb_bench.util.rlkit_custom import CustomTorchBatchRLAlgorithm
 
 from rlkit.core import logger
 import robosuite as suite
